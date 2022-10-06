@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+# $: << File.expand_path('../', __FILE__)
+# $: << File.expand_path('../lib/', __FILE__)
+
+require 'cloudgeo'
+
+@address = '123 Main St, Suite 201, Huntington Beach, CA 92648'
+Cloudgeo::Mapbox.geocode(@address)

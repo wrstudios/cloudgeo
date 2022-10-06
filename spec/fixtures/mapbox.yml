@@ -1,0 +1,97 @@
+hb_hq:
+  address: 123 Main St, Huntington Beach, CA 92648
+  raw_result:
+    id: address.687674772298142
+    type: Feature
+    place_type:
+    - address
+    relevance: 0.875
+    properties: {}
+    text: Main Street
+    place_name: 123 Main Street, Huntington Beach, California 92648, United States
+    center: [-118.00152, 33.658041]
+    geometry:
+      type: Point
+      coordinates: [-118.00152, 33.658041]
+    address: '123'
+    context:
+    - id: neighborhood.283574
+      text: Downtown
+    - id: postcode.13991942103894740
+      text: '92648'
+    - id: place.4587013961419650
+      wikidata: Q5917
+      text: Huntington Beach
+    - id: region.3591
+      short_code: US-CA
+      wikidata: Q99
+      text: California
+    - id: country.3145
+      short_code: us
+      wikidata: Q30
+      text: United States
+  result:
+    :lat: 33.658041
+    :lon: -118.00152
+    :address: 123 Main Street, Huntington Beach, California 92648, United States
+    :address_components:
+      :number: '123'
+      :street: 'Main Street'
+      :street_address: '123 Main Street'
+      :city: 'Huntington Beach'
+      :state: 'California'
+      :postal_code: '92648'
+      :country: 'United States'
+    :source: :mapbox
+    :quality: 0.875
+    :raw_quality: 0.875
+
+canada:
+  address: 4920 190 Street Northwest, Edmonton, AB, Canada
+  raw_result:
+    id: address.4804748044882050
+    type: Feature
+    place_type:
+    - address
+    relevance: 1
+    properties: {}
+    text: 190 St NW
+    place_name: 4920 190 St NW, Edmonton, Alberta T6M 2R5, Canada
+    center:
+    - -113.65184
+    - 53.486065
+    geometry:
+      type: Point
+      coordinates:
+      - -113.65184
+      - 53.486065
+    address: '4920'
+    context:
+    - id: postcode.13047697336483520
+      text: T6M 2R5
+    - id: place.9080100702660390
+      wikidata: Q2096
+      text: Edmonton
+    - id: region.219693
+      short_code: CA-AB
+      wikidata: Q1951
+      text: Alberta
+    - id: country.3179
+      short_code: ca
+      wikidata: Q16
+      text: Canada
+  result:
+    :lat: 53.486065
+    :lon: -113.65184
+    :address: 4920 190 St NW, Edmonton, Alberta T6M 2R5, Canada
+    :address_components:
+      :number: '4920'
+      :street: 190 St NW
+      :street_address: 4920 190 St NW
+      :city: Edmonton
+      :state: Alberta
+      :postal_code: T6M 2R5
+      :country: Canada
+    :source: :mapbox
+    :quality: 1.0
+    :raw_quality: 1.0

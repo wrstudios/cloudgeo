@@ -1,0 +1,70 @@
+hb_hq:
+  address: 123 Main St, Huntington Beach, CA 92648
+  raw_result:
+    address_components:
+      formatted_street: 'Main St'
+      number: '123'
+      street: 'Main'
+      suffix: 'St'
+      city: 'Huntington Beach'
+      county: 'Orange County'
+      state: 'CA'
+      zip: '92648'
+      country: 'US'
+    formatted_address: 123 Main St, Huntington Beach, CA 92648
+    location:
+      lat: 33.65749
+      lng: -118.001884
+    accuracy: 1
+    accuracy_type: range_interpolation
+    source: TIGER/Line® dataset from the US Census Bureau
+  result:
+    :lat: 33.65749
+    :lon: -118.001884
+    :address: 123 Main St, Huntington Beach, CA 92648
+    :address_components:
+      :number: '123'
+      :street: Main St
+      :street_address: 123 Main St
+      :city: Huntington Beach
+      :state: CA
+      :postal_code: '92648'
+      :country: United States
+    :source: :geocodio
+    :quality: 0.9
+    :raw_quality: 1, range_interpolation
+
+canada:
+  address: 4920 190 Street Northwest, Edmonton, AB, Canada
+  raw_result:
+    address_components:
+      number: '4920'
+      street: 190th
+      suffix: St
+      postdirectional: NW
+      formatted_street: 190th St NW
+      city: Edmonton
+      state: AB
+      country: CA
+    formatted_address: 4920 190th St NW, Edmonton, AB
+    location:
+      lat: 53.485887
+      lng: -113.651596
+    accuracy: 1
+    accuracy_type: range_interpolation
+    source: CanVec+ by Natural Resources Canada
+  result:
+    :lat: 53.485887
+    :lon: -113.651596
+    :address: 4920 190th St NW, Edmonton, AB
+    :address_components:
+      :number: '4920'
+      :street: 190th St NW
+      :street_address: 4920 190th St NW
+      :city: Edmonton
+      :state: AB
+      :postal_code: ''
+      :country: Canada
+    :source: :geocodio
+    :quality: 0.9
+    :raw_quality: 1, range_interpolation

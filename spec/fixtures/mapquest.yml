@@ -1,0 +1,85 @@
+hb_hq:
+  address: 123 Main St, Huntington Beach, CA 92648
+  raw_result:
+    street: 123 Main St
+    adminArea6: ''
+    adminArea6Type: Neighborhood
+    adminArea5: Huntington Beach
+    adminArea5Type: City
+    adminArea4: Orange
+    adminArea4Type: County
+    adminArea3: CA
+    adminArea3Type: State
+    adminArea1: US
+    adminArea1Type: Country
+    postalCode: 92648-5125
+    geocodeQualityCode: P1AAA
+    geocodeQuality: POINT
+    dragPoint: false
+    sideOfStreet: L
+    linkId: r7697650|p171683279|n9430067
+    unknownInput: ''
+    type: s
+    latLng:
+      lat: 33.657848
+      lng: -118.001293
+    displayLatLng:
+      lat: 33.658045
+      lng: -118.001561
+    mapUrl: http://www.mapquestapi.com/staticmap/v5/map?key=sag8vsWUyOA18X2duGt9Bf5jkbCRXr3x&type=map&size=225,160&locations=33.657848,-118.001293|marker-sm-50318A-1&scalebar=true&zoom=15&rand=268764580
+  result:
+    :lat: 33.657848
+    :lon: -118.001293
+    :address: 123 Main St, Huntington Beach, CA 92648
+    :address_components:
+      :street_address: '123 Main St'
+      :city: 'Huntington Beach'
+      :state: 'CA'
+      :postal_code: '92648'
+      :country: 'US'
+    :source: :mapquest
+    :quality: 1.0
+    :raw_quality: P1AAA
+
+canada:
+  address: 4920 190 Street Northwest, Edmonton, AB, Canada
+  raw_result:
+    street: 4920 190 St NW
+    adminArea6: ''
+    adminArea6Type: Neighborhood
+    adminArea5: Edmonton
+    adminArea5Type: City
+    adminArea4: Division No. 11
+    adminArea4Type: County
+    adminArea3: AB
+    adminArea3Type: State
+    adminArea1: CA
+    adminArea1Type: Country
+    postalCode: T6M 2S6
+    geocodeQualityCode: P1AAA
+    geocodeQuality: POINT
+    dragPoint: false
+    sideOfStreet: L
+    linkId: r39798762|p155114917|n53928083
+    unknownInput: ''
+    type: s
+    latLng:
+      lat: 53.48607
+      lng: -113.65144
+    displayLatLng:
+      lat: 53.486067
+      lng: -113.651837
+    mapUrl: http://www.mapquestapi.com/staticmap/v5/map?key=AXrjyC8mZxxUN4JxPdNbpkdOC2u1CO1m&type=map&size=225,160&locations=53.48607,-113.65144|marker-sm-50318A-1&scalebar=true&zoom=15&rand=2089886453
+  result:
+    :lat: 53.48607
+    :lon: -113.65144
+    :address: 4920 190 Street Northwest, Edmonton, AB, Canada
+    :address_components:
+      :street_address: 4920 190 St NW
+      :city: Edmonton
+      :state: AB
+      :postal_code: T6M 2S6
+      :country: CA
+    :source: :mapquest
+    :quality: 1.0
+    :raw_quality: P1AAA
