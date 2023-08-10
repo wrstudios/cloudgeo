@@ -14,6 +14,7 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
 
   s.add_runtime_dependency 'geocoder', '1.6.7'
+  s.add_runtime_dependency 'httparty'
   s.add_runtime_dependency 'hashie'
   s.add_runtime_dependency 'lumberjack'
 end
