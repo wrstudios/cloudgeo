@@ -54,17 +54,7 @@ class Cloudgeo
           return data
         end
 
-        if (
-          (
-            data[:quality] >= 0.6 &&
-            address.include?(data.dig(:address_components, :postal_code)) &&
-            address.include?(data.dig(:address_components, :street))
-          ) ||
-          (
-            data[:quality] > 0.6 &&
-            data[:address].to_s.downcase.include?(' canada')
-          )
-        )
+        if self.accuracy_check(data, address) || self.canadian_geocode_accuracy_check(data)
           return data
         end
       else
@@ -106,6 +96,26 @@ private
     @logger.info(object.to_json)
   end
 
+  def self.accuracy_check(data, address)
+    case data[:source]
+    when :google
+      true
+    when :geocodio
+      data[:quality] >= 0.6 &&
+      address.include?(data.dig(:address_components, :postal_code)) &&
+      address.downcase.include?(data.dig(:address_components, :street).downcase)
+    else
+      data[:quality] >= 0.6 &&
+      address.include?(data.dig(:address_components, :postal_code))
+    end
+  end
+
+  def self.canadian_geocode_accuracy_check(data)
+    quality_check = data[:quality] > 0.6
+    address_check = data[:address].to_s.downcase.include?(' canada')
+
+    quality_check && address_check
+  end
 end
 
 require 'hashie'
