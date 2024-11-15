@@ -54,9 +54,17 @@ class Cloudgeo
           return data
         end
 
-        if ((data[:quality] >= 0.6 && address.include?(data.dig(:address_components, :postal_code))) ||
-          (data[:quality] > 0.6 && data[:address].to_s.downcase.include?(' canada')))
-
+        if (
+          (
+            data[:quality] >= 0.6 &&
+            address.include?(data.dig(:address_components, :postal_code)) &&
+            address.include?(data.dig(:address_components, :street))
+          ) ||
+          (
+            data[:quality] > 0.6 &&
+            data[:address].to_s.downcase.include?(' canada')
+          )
+        )
           return data
         end
       else
