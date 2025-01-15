@@ -104,6 +104,8 @@ private
       data[:quality] >= 0.6 &&
       address.include?(data.dig(:address_components, :postal_code)) &&
       address.downcase.include?(data.dig(:address_components, :street).downcase)
+    when :mapbox
+      data[:quality] >= 0.6
     else
       data[:quality] >= 0.6 &&
       address.include?(data.dig(:address_components, :postal_code))
